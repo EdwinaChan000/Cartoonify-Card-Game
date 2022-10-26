@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <title>signup</title>
+</head>
+
+<body>
+    <div id="signUpBox">
+        <h1>申請帳號</h1>
+        <form id="signUpForm">
+
+            <p>
+                <label for="name"><b></b></label>
+                <input type="text" placeholder="輸入稱呼" name="name" required />
+            </p>
+
+            <p>
+                <label for="email"><b></b></label>
+                <input type="text" placeholder="輸入電郵" name="email" required />
+            </p>
+
+            <p>
+                <label for="psw"><b></b></label>
+                <input type="password" placeholder="輸入密碼" name="psw" required />
+            </p>
+
+            <p>
+                <label for="psw-repeat"><b></b></label>
+                <input type="password" placeholder="再次輸入密碼" name="repeat" required />
+            </p>
+
+            <p>
+                <label for="profile"><b>上傳頭像</b></label>
+                <input type="file" id="files" name="files" required />
+                <i class="validation"><span></span><span></span></i>
+            </p>
+
+            <p>
+                <button type="submit" class="signUpbtn">確定</button>
+            </p>
+
+        </form>
+        <div id="have-account">
+            <p>已有帳號? <a href="login.html">遊戲登入</a></p>
+            <p> <a href="index.html">返回主目錄</a></p>
+            <p></p>
+        </div>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/signUp.js"></script>
+
+</body>
+
+</html>

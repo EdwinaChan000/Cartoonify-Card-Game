@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #3070b8;
+    --text-color: #fbfbfb;
+    --background-color: #333333;
+    --box-shadow: #d5d3cf;
+}
+
+/* ########header######## */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* some difference */
+    padding: 14px 100px;
+    transition: 0.5 linear;
+    background: var(--background-color);
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login > a {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 8px 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 0 0 5px;
+}
+
+.login > a:hover {
+    color: var(--background-color);
+}
+
+/* ########header######## */
+
+/* ###photo### */
+
+.mainPhoto {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ####Game#### */
+
+.heading > h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.h2 {
+    position: absolute;
+    bottom: 1000px;
+}
+
+span {
+    color: var(--main-color);
+    font-size: 55px;
+}
+
+.card-body h5 {
+    font-size: 25px;
+}
+
+.card-body p {
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    border-color: var(--text-color);
+    margin: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box-container .card {
+    margin: 10px;
+    border-color: var(--text-color);
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+/* ====update gif photo */
+.gif3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.gif2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.gif1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* ###footer### */
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.about-us {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.footer-content {
+    font-size: 10px;
+}
+
+.about-us,
+.footer-content {
+    text-align: center;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.ins,
+.fb,
+.twitter {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="./css/game.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="game-board">
+        <div class="opponentZone">
+            <div class="opponentDeck">
+                <div id="opponentDeck-1" class="opponentCard"><img src="./img/decks.png"></div>
+                <div id="opponentDeck-2" class="opponentCard"><img src="./img/decks.png"></div>
+                <div id="opponentDeck-3" class="opponentCard"><img src="./img/decks.png"></div>
+                <div id="opponentDeck-4" class="opponentCard"><img src="./img/decks.png"></div>
+                <div id="opponentDeck-5" class="opponentCard"><img src="./img/decks.png"></div>
+            </div>
+        </div>
+        <div class="actionZone">
+            <div class="actionZone-Left">
+                <div id="chatMessageMainContainer" class="collapse">
+                    <a id="resizeChat">展開</a>
+                    <a id="chatBox">聊天</a>
+                    <div class="chatMessageOutputContainer">
+                        <ul id="chatOutput" class="collapseSub">
+                        </ul>
+                    </div>
+                    <div class="chatMessageInputContainer">
+                        <div class="chatMessageInput">
+                            <form id="chatInput" class="collapseSub">
+                                <input type="text" name="message" placeholder="輸入信息">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="opponent-HP">對手 HP</div>
+                <div id="damage"></div>
+                <div id="player-HP">玩家 HP</div>
+            </div>
+            <div class="actionZone-Middle">
+                <div id="opponent-card">對手卡牌</div>
+                <div id="player-card">玩家卡牌</div>
+            </div>
+            <div class="actionZone-Right">
+                <div id="timerButton"><button>Timer On/Off</button></div>
+                <div id="testPythonButton"><button>Test Python</button></div>
+                <div id="resetButton"><button>Reset Game</button></div>
+                <div id="opponent-move"></div>
+                <div id="move-result"></div>
+                <div id="timerDisplay" class="hiddenToggler">
+                    <div id="timer"></div>
+                </div>
+                <div id="player-move"></div>
+            </div>
+        </div>
+        <div class="playerZone">
+            <div class="control">
+                <div class="skillSet">
+                    <!-- <a>卡牌技能</a> -->
+                    <!-- <div id="skill-1"></div>
+                    <div id="skill-2"></div> -->
+                </div>
+                <div class="ready">
+                    <div id="readyButton">準備</div>
+                    <div id="confirmCardButton">確認選擇</div>
+                    <div id="nextButton">下一回合</div>
+                </div>
+                <div class="rock-paper-scissor">
+                    <div id="move_rock"><a>rock</a><img src="./img/rock.png" /></div>
+                    <div id="move_scissor"><a>scissor</a><img src="./img/scissor.png" /></div>
+                    <div id="move_paper"><a>paper</a><img src="./img/paper.png" /></div>
+                </div>
+            </div>
+            <div class="playerDeck">
+                <div id="playerDeck-1" class="playerCard">卡牌 1</div>
+                <div id="playerDeck-2" class="playerCard">卡牌 2</div>
+                <div id="playerDeck-3" class="playerCard">卡牌 3</div>
+                <div id="playerDeck-4" class="playerCard">卡牌 4</div>
+                <div id="playerDeck-5" class="playerCard">卡牌 5</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+
+</html>

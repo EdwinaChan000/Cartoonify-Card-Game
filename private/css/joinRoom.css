@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: url('../assets/design_background6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+:root {
+    --main-color: #3070b8;
+    --text-color: #fbfbfb;
+    --background-color: #333333;
+    --box-shadow: #d5d3cf;
+}
+
+/* ########header######## */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    transition: 0.5 linear;
+    background: var(--background-color);
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    padding: 8px 17px;
+    color: var(--text-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.logout {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 8px 17px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* before body */
+.beforeBody {
+    margin-top: 60px;
+}
+
+/* body */
+.roomList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.room:hover {
+    background-color: #333333 !important;
+}
+
+.room,
+#room-2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background: var(--background-color);
+    background-color: rgba(51, 51, 58, 0.8) !important;
+    margin: -10px;
+    width: 800px;
+    height: 150px;
+    -webkit-clip-path: polygon(0 6%, 100% 18%, 100% 84%, 0 100%);
+    clip-path: polygon(0 6%, 100% 18%, 100% 84%, 0 100%);
+}
+
+#room-2 {
+    transform: rotateY(180deg);
+    background-color: rgba(51, 51, 58, 0.8);
+}
+
+.room3 {
+    background-color: rgba(51, 51, 58, 0.8) !important;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+#room-2:hover {
+    background-color: #333333 !important;
+}
+
+.room3:hover {
+    background-color: #333333 !important;
+}
+
+#room-2 > div {
+    transform: rotateY(180deg);
+}
+
+.avata {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.avata > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+#join-room-1,
+#join-room-2,
+#join-room-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#join-room-2 {
+    margin-right: 120px;
+}
+
+#join-room-3 {
+    text-align: center;
+}
+
+#chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 60px;
+    height: 40px;
+    font-size: 50px;
+}
+
+.room button {
+    background: none;
+    width: 200px;
+    height: 200px;
+    border: none;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}
+
+.waiting {
+    margin-top: 40px;
+    color: white;
+    font-size: 50px;
+}
+
+#create-room button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: #333333;
+    width: 250px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    box-shadow: 13px 7px 9px #5965b3;
+    -webkit-box-shadow: 13px 7px 9px #5965b3;
+    -moz-box-shadow: 13px 7px 9px #5965b3;
+    font-weight: 900;
+    border-radius: 10px;
+    border: solid 2px;
+}
+
+#create-room button:hover {
+    color: #333333;
+    background-color: #666666;
+}
+
+/* before-footer */
+.before-footer {
+    margin: 200px;
+}
+
+/* * ###footer### */
+.footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.about-us {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.footer-content {
+    font-size: 10px;
+}
+
+.about-us,
+.footer-content {
+    text-align: center;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.ins,
+.fb,
+.twitter {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
+}

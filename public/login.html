@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>login</title>
+</head>
+
+<body>
+    <div id="login-form-wrap">
+        <h2>遊戲登入</h2>
+        <form id="login-form">
+            <p>
+                <input type="email" id="email" name="email" placeholder="輸入電郵地址" required /><i
+                    class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+                <input type="password" id="password" name="psw" placeholder="輸入密碼" required /><i
+                    class="validation"><span></span><span></span></i>
+            </p>
+            <p>
+                <input type="submit" id="login" value="確定" />
+            </p>
+        </form>
+        <div id="create-account-wrap">
+            <p>沒有帳號? <a href="signUp.html">按此申請帳號</a></p>
+            <p><a href="index.html">返回主目錄</a></p>
+            <p></p>
+        </div>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>
